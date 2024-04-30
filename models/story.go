@@ -2,6 +2,8 @@ package models
 
 import "time"
 
+const ActiveStoriesPerPage = 25
+
 type Story struct {
 	ID            int64
 	Title         string

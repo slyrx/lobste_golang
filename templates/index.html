@@ -1,0 +1,11 @@
+<!-- index.html -->
+<h1>{{ .title }}</h1>
+{{ .above }}
+<ul>
+    {{ range .stories }}
+    <li>{{ .Title }} - {{ .URL }}</li>
+    {{ end }}
+</ul>
+{{ if .showMore }}
+<a href="/active?page=2">Show More</a>
+{{ end }}
